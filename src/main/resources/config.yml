@@ -1,0 +1,46 @@
+economy:
+  starting_balance: 1000.0
+  async_save: true
+  sell_back_enabled: true
+  sell_back_percentage: 50.0
+  transaction_tax: 0.0
+
+shop:
+  title: "&6&lShard Shop"
+  rows: 6
+  fill_empty_slots: true
+  fill_material: "BLACK_STAINED_GLASS_PANE"
+  async_save: true
+  auto_save_interval: 300
+
+confirmation:
+  title: "&c&lConfirm Action"
+  confirm_slot: 11
+  cancel_slot: 15
+  timeout_seconds: 30
+
+sounds:
+  enabled: true
+  shop_open: "BLOCK_CHEST_OPEN"
+  item_purchase: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  item_sell: "ENTITY_VILLAGER_YES"
+  item_added: "BLOCK_NOTE_BLOCK_PLING"
+  item_removed: "BLOCK_ANVIL_LAND"
+  error: "ENTITY_VILLAGER_NO"
+  confirmation_open: "BLOCK_LEVER_CLICK"
+  volume: 1.0
+  pitch: 1.0
+
+display:
+  show_enchantments: true
+  show_item_flags: true
+  price_format: "&e$%,.2f"
+  sell_price_format: "&a$%,.2f"
+  lore_separator: ""
+  purchase_lore:
+    - ""
+    - "&7Price: %price%"
+    - "&8Sell for: %sell_price%"
+    - ""
+    - "&aLeft-Click &7to buy"
+    - "&cRight-Click &7to sell"

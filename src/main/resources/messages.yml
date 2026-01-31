@@ -1,0 +1,63 @@
+prefix: "&6[ShardShop] &r"
+
+shop:
+  opened: "&aShop opened!"
+  empty: "&cThe shop is currently empty."
+  
+purchase:
+  success: "&aYou purchased &e%amount%x %item% &afor &e%price%&a!"
+  insufficient_funds: "&cYou need &e%price% &cto purchase this item!"
+  insufficient_space: "&cYou don't have enough inventory space!"
+  
+sell:
+  success: "&aYou sold &e%amount%x %item% &afor &e%price%&a!"
+  not_in_shop: "&cThis item is not available in the shop!"
+  no_item: "&cYou don't have this item to sell!"
+  disabled: "&cSelling items is currently disabled!"
+
+economy:
+  balance: "&aYour balance: &e%balance%"
+  balance_other: "&e%player%'s &abalance: &e%balance%"
+  balance_set: "&aSet &e%player%'s &abalance to &e%amount%"
+  balance_given: "&aGave &e%amount% &ato &e%player%"
+  balance_taken: "&aTook &e%amount% &afrom &e%player%"
+  balance_received: "&aYou received &e%amount%"
+  balance_removed: "&cYour balance was reduced by &e%amount%"
+  pay_sent: "&aYou sent &e%amount% &ato &e%player%"
+  pay_received: "&aYou received &e%amount% &afrom &e%player%"
+  insufficient_funds: "&cYou don't have enough money! Need: &e%amount%"
+  player_insufficient_funds: "&e%player% &cdoesn't have enough money!"
+  invalid_amount: "&cInvalid amount! Must be greater than 0."
+  player_not_found: "&cPlayer &e%player% &cnot found!"
+  cannot_pay_self: "&cYou cannot pay yourself!"
+
+admin:
+  item_added: "&aAdded &e%item% &ato shop for &e%price%&a!"
+  item_removed: "&aRemoved &e%item% &afrom shop!"
+  item_not_found: "&cItem not found in shop!"
+  item_already_exists: "&cThis item already exists in the shop!"
+  invalid_price: "&cInvalid price! Must be greater than 0."
+  invalid_material: "&cInvalid material: &e%material%"
+  hold_item: "&cYou must hold an item in your hand!"
+  reload_success: "&aConfiguration reloaded successfully!"
+  clear_confirm: "&eAre you sure you want to clear all shop items?"
+  clear_success: "&aCleared &e%count% &aitems from shop!"
+  list_header: "&6&m          &r &6Shop Items &6&m          "
+  list_item: "&e%index%. &f%item% &7- &a$%price%"
+  list_footer: "&6&m                                  "
+  no_permission: "&cYou don't have permission to use this command!"
+
+confirmation:
+  title_add: "&eConfirm: Add %item%?"
+  title_remove: "&eConfirm: Remove %item%?"
+  title_clear: "&eConfirm: Clear Shop?"
+  confirm_button: "&a&lCONFIRM"
+  cancel_button: "&c&lCANCEL"
+  cancelled: "&cAction cancelled."
+  expired: "&cConfirmation expired."
+
+errors:
+  economy_not_loaded: "&cEconomy system not available!"
+  data_save_failed: "&cFailed to save shop data!"
+  data_load_failed: "&cFailed to load shop data!"
+  command_error: "&cAn error occurred while executing the command."

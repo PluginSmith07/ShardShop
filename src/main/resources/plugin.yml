@@ -1,0 +1,40 @@
+name: ShardShop
+version: '1.0.0'
+main: com.shardshop.ShardShop
+api-version: '1.13'
+author: Your Name
+description: Custom shop plugin with built-in economy
+
+commands:
+  shop:
+    description: Open the shop GUI
+    usage: /<command> [balance|pay]
+    permission: shardshop.use
+    aliases: [ss]
+  shopadmin:
+    description: Manage shop items and economy
+    usage: /<command> [add|addname|remove|list|clear|reload|set|give|take]
+    permission: shardshop.admin
+    aliases: [ssadmin, sadmin]
+
+permissions:
+  shardshop.use:
+    description: Access to open the shop
+    default: true
+  shardshop.balance:
+    description: Check your balance
+    default: true
+  shardshop.balance.others:
+    description: Check other players' balances
+    default: op
+  shardshop.pay:
+    description: Send money to other players
+    default: true
+  shardshop.admin:
+    description: Access to all admin commands
+    default: op
+    children:
+      shardshop.use: true
+      shardshop.balance: true
+      shardshop.balance.others: true
+      shardshop.pay: true
